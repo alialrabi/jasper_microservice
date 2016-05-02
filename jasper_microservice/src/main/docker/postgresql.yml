@@ -1,0 +1,12 @@
+version: '2'
+services:
+    jasper_microservice-postgresql:
+        container_name: jasper_microservice-postgresql
+        image: postgres:9.5.1
+        # volumes:
+        #     - ~/volumes/jhipster/jasper_microservice/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=jasper_microservice
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
